@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  height: auto;
+  /*overflow: hidden;*/
+  background-color: #2C4251;
+}
+
+.container {
+  background: #2C4251;
+  padding: 0%;
+  margin: 0 auto;
+
+  min-height: 100vh;
+}
+
+header {
+  padding: 1% 0;
+  margin: 0%;
+}
+
+h1 {
+  text-align: center;
+  line-height: 80%;
+  /*color: #B6C649;*/
+  color: #ffffff;
+  font-size: 400%;
+  font-family: 'Acme', sans-serif;
+
+  margin-bottom: 0%;
+}
+
+.picture {
+  text-align: center;
+  margin-bottom: -140px;
+  /*position: absolute;*/
+  z-index: 2;
+  opacity: 80;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 100%;
+  font-family: 'Signika', sans-serif;
+
+  margin-bottom: 3%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.author {
+  text-align: center;
+  color: #ffffff;
+  font-size: 100%;
+  font-family: 'Tajawal', sans-serif;
+  opacity: 0.5;
+}
+
+.weather-table {
+  height: 130%;
+  padding: 5%;
+  margin: 10%;
+  margin-top: 3%;
+  background: #E8E8E8;
+
+  border-style: double;
+  border-width: 5px;
+  border-color: #D16666;
+
+  color: #2C4251;
+  font-size: 100%;
+  font-family: 'Hind Siliguri', sans-serif;
+}
