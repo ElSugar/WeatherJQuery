@@ -7,6 +7,11 @@
     <title>Weather online</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Signika:300|Tajawal:300&display=swap" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
   </head>
 
   <body>
@@ -20,21 +25,26 @@
       <h2>
         what is the weather today? 
       </h2>
-      
+
       <div class="weather-table">
 
-        <div class="left">
+        <div class="center">
           <p>
-            <label for="">Country: </label>
+            <label for=""><b>Country: </b></label>
             <select>
+              <option selected disabled>Choose the country</option>
               <option value="RU">Russia</option>
               <option value="CN">China</option>
               <option value="US">U.S.</option>
             </select>
           </p>
+        </div>
+
+        <div class="left">
           <p>
-            <label for="">City:</label>
-            <div id="city"></div>
+            <label for=""> <b>City</b>:</label>
+            <div id="city">
+            </div>
           </p>
         </div>
 
@@ -47,11 +57,13 @@
       <footer>
         
         <div class="author">
-           <p>Elizabeth Sakharova, 2020</p>
+           <!-- <p>Elizabeth Sakharova, 2020</p> -->
+           <a href="https://github.com/ElSugar">Elizabeth Sakharova, 2020</a>
         </div>
        
       </footer>
     </div>
+    <script src="script.js"></script>
     
   </body>
 

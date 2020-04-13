@@ -8,17 +8,17 @@ $(document).ready(function() {
         }
       }
       $('#city').html(out);
-      $('#city p').on('click', function(){
+      $('#city p').on('click', function() {
         $.get(
-          "api.openweathermap.org/data/2.5/weather",
+          "http://api.openweathermap.org/data/2.5/weather",
           {
-            "id": $(this).attr('value'),
+            "id" : $(this).attr('value'),
             "appid": "f616afccbe8d4877daef3e9161357d4a"
           },
             function(data) {
               let out='';
               out += 'Weather: <b>'+data.weather[0].main+'</b><br>';
-              out += '<p style="text-align:center"><img src="openweathermap.org/img/w/'+data.weather[0].icon+'.png"></p>';
+              out += '<p style="text-align:center"><img src="https://openweathermap.org/img/w/'+data.weather[0].icon+'.png"></p>';
               out += 'Temprature: <b>'+Math.round(data.main.temp-273)+'&#176;C</b><br>';
               out += 'Humidity: <b>'+data.main.humidity+'%</b><br>';
               console.log(data.main);
