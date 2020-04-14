@@ -2,13 +2,15 @@ $(document).ready(function() {
   $.getJSON('current.city.list.json', function(data) {
     $('select').on('change', function() {
       var out='';
+      out += `<select>`
       for (var key in data) {
         if (data[key].country==$('select option:selected').val()) {
-          out += `<p value="${data[key].id}">${data[key].name}</p>`;
+          out += `<option value="${data[key].id}">${data[key].name}</option>`;
         }
       }
+      out += `</select>`
       $('#city').html(out);
-      $('#city p').on('click', function() {
+      $('#city option').on('click', function() {
         $.get(
           "http://api.openweathermap.org/data/2.5/weather",
           {
