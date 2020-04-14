@@ -12,7 +12,7 @@ $(document).ready(function() {
       $('#city').html(out);
       $('#city option').on('click', function() {
         $.get(
-          "http://api.openweathermap.org/data/2.5/weather",
+          "https://api.openweathermap.org/data/2.5/weather",
           {
             "id" : $(this).attr('value'),
             "appid": "f616afccbe8d4877daef3e9161357d4a"
