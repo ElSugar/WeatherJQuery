@@ -79,11 +79,7 @@ a {
   background: #E8E8E8;
   padding-left: 20%;
   padding-right: 20%;
-  /*
-  border-style: double;
-  border-width: 5px;
-  border-color: #D16666;
-  */
+  
   color: #2C4251;
   font-size: 100%;
   font-family: 'Hind Siliguri', sans-serif;
@@ -94,22 +90,24 @@ a {
 }
 
 .left {
-  height: 200px;
+  /*height: 200px;
+  /*
   min-width: 100px;
   max-width: 300px;
-  overflow-y: scroll;
+  */
+  /*overflow-y: scroll;*/
   left: 50%;
 
-  border-style: groove;
+  /*border-style: groove;
   border-width: 1px;
   border-color: #2C4251;
 
-  padding-left: 5%;
+  padding-left: 5%; */
 }
 
 .city {
-  height: 100px;
-  overflow-y: scroll;
+  /*height: 100px;*/
+  /*overflow-y: scroll;*/
 }
 
 .right {
